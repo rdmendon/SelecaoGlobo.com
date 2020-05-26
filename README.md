@@ -72,5 +72,5 @@ Iniciando 26/05 as 10:00
 * Ao executar o codigo, obtive erros de versionamento (estou usando terraform 0.11)
 * Tentei adaptar o codigo, não consegui.
 * Resolvi retornar ao codigo original, testei e funcionou.
-* Criei um outro diretorio na minha maquina para testar os codigos com o terraform 0.12
+* Criei um outro diretorio na minha maquina para testar os codigos com o terraform 0.12.
 * Parando para descansar as 13:00
