@@ -1,3 +1,15 @@
+Modo de execução:
+
+Acessar o endereço do Git https://github.com/SelecaoGlobocom/richard-mendonca ou https://github.com/rdmendon/SelecaoGlobo.com e clonar/baixar os arquivos. Neste endereço ja tem todos os arquivos necessarios.
+IMPORTANTE: os arquivos config e credentials devem ser copiados para o seu diretorio $HOME/.aws (exemplo - C:\Users\Richard\.aws)
+A versão utilizada neste teste técnico é o Terraform v0.11.14 ja contida nos arquivos.
+Para executar o script, acessar o cmd e ir ao caminho onde baixou os arquivos.
+executar a sequencia terraform init, terraform plan e terraform apply --auto-aprove
+executar o comando  terraform show e procurar a tag "public_ip = 18.230.137.91" este será o ip da instancia criada na aws
+Agora, acesse a instancia criada com putty ou outro aplicativo de sua preferencia passando como usuario e ip o seguinte: ec2-user@ip-publico. Junto aos arquivos existe a chave de confiança chamada desafio-aws2.ppk
+Com estas informações você acessará a aplicação.
+Neste ponto, poderá executar um docker ps e verá que o container com a aplicação estará rodando na porta indicada. 
+
 Iniciando em 22/05 as 18:30
 * Criei um diretório em minha maquina (Windows) e iniciei o cmder, criando o diretorio C:\Users\Richard\Desktop\DEVOPS\Terraform\SelecaoGlobo.com, iniciei um repositorio com git init.
 * Após a criação, li os requerimentos, o readme e o exercicio, verifiquei meus arquivos de Terraform e encontrei uma estrutura ja usada contendo a criação da infra.
@@ -72,5 +84,13 @@ Iniciando 26/05 as 10:00
 * Ao executar o codigo, obtive erros de versionamento (estou usando terraform 0.11)
 * Tentei adaptar o codigo, não consegui.
 * Resolvi retornar ao codigo original, testei e funcionou.
-* Criei um outro diretorio na minha maquina para testar os codigos com o terraform 0.12.
-* Parando para descansar as 13:00
+* Criei um outro diretorio na minha maquina para testar os codigos com o terraform 0.12
+* Parando para descansar as 13:00..
+
+Iniciando dia 27/05 as 09:30
+
+* Ontem fiquei um bom tempo tentando usar o hooks do Github para automatizar o deploy, mas não consegui e não encontrei nada que me ajudasse.
+* Ao pesquisar, vi que geralmente usam o Ansible para fazer o deploy, e eu estou fazendo de uma forma não convencional.
+* Pelo que apurei, a forma que fiz a infra e a versão do terraform, o que fiz é bem proximo da automação pedida, faltando apenas o deploy automatico ao realizar commit.
+* O que iniciarei agora é deixar o codigo mais amigavel e colocar as instruções de execução no readme.
+* Também vou iniciar uma versão com o terraform 0.12 ao qual copiei, mas caso esta não funcione ou não de tempo, será entregue a versão atual.

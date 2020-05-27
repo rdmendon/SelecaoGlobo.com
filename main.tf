@@ -12,6 +12,7 @@ tags {
   }
 subnet_id = "${aws_subnet.subnet-uno.id}"
 associate_public_ip_address = true
+echo "Criando o servidor e infraestrutura"
 user_data = "${file("criar_app.sh")}"
 
 }
