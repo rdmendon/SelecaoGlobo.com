@@ -10,13 +10,13 @@ Todos os arquivos foram disponibilizados no diretório do git
 
 •	Neste endereço já tem todos os arquivos necessários.
 
-•	IMPORTANTE: os arquivos config e credentials devem ser copiados para o seu diretório $HOME/.aws (exemplo - C:\Users\Richard\.aws)
+•	IMPORTANTE: usar o credentials fornecido no diretorio (credentials.csv) para configurar o aws configure (usar regial sa-east-1 e json)
 
 •	A versão utilizada neste teste técnico é o Terraform v0.11.14 já contida nos arquivos.
 
 •	Para executar o script, acessar o cmd e ir ao caminho onde baixou os arquivos.
 
-•	Executar a sequência terraform init, terraform plan e terraform apply --auto-aprove
+•	Executar a sequência terraform init, terraform plan e terraform apply -auto--aprove
 
 •	Executar o comando terraform show e procurar a tag "public_ip = xx.xx.xx.xx" este será o ip da instancia criada na aws
 
